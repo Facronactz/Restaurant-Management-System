@@ -117,6 +117,8 @@ const chartData = computed(() => {
   };
 });
 
+// console.log(chartData.value)
+
 const chartOptions = {
   responsive: true,
   maintainAspectRatio: false,
@@ -151,7 +153,4 @@ const formatCurrency = (value) => {
 </script>
 
 <style scoped>
-.chart-container {
-  height: 500px; /* Adjust the height as needed */
-}
 </style>
