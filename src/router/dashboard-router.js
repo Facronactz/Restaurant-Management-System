@@ -6,6 +6,11 @@ const dashboardRoutes = [
     name: 'Dashboard',
     component: import('@/views/DashboardView.vue'),
   },
+  {
+    path: '/products',
+    name: 'Products',
+    component: import('@/views/ProductsView.vue'),
+  },
 ];
 
 const dashboardRouter = createRouter({
