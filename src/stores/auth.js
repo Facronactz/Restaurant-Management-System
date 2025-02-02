@@ -6,7 +6,7 @@ import { setupAxios } from '@/utils/common-axios.js'
 export const useAuthStore = defineStore('auth', {
   state: () => ({
     isLogin: !!localStorage.getItem('token'),
-    user: null,
+    user: JSON.parse(localStorage.getItem('user')) || null,
     token: localStorage.getItem('token') || null
   }),
 
@@ -22,6 +22,7 @@ export const useAuthStore = defineStore('auth', {
 
         // Store token in localStorage
         localStorage.setItem('token', this.token)
+        localStorage.setItem('user', JSON.stringify(this.user))
 
         // Set default axios authorization header
         setupAxios(this.token)
@@ -53,6 +54,7 @@ export const useAuthStore = defineStore('auth', {
       this.user = null
       this.token = null
       localStorage.removeItem('token')
+      localStorage.removeItem('user')
       delete axios.defaults.headers.common['Authorization']
     },
 
