@@ -20,7 +20,7 @@
     "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.3.1",
     "primevue": "^4.2.5",
-    "sweetalert2": "^11.15.10",
+    "sweetalert2": "^11.22.4",
     "tailwindcss": "^4.0.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
