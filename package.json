@@ -15,7 +15,7 @@
   "dependencies": {
     "@primevue/themes": "^4.2.5",
     "@tailwindcss/vite": "^4.0.0",
-    "axios": "^1.7.9",
+    "axios": "^1.13.5",
     "chart.js": "^4.4.7",
     "oh-vue-icons": "^1.0.0-rc3",
     "pinia": "^2.3.1",
